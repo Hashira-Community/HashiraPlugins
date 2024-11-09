@@ -63,3 +63,10 @@ public sealed class Scramble : Plugin {
     	}
 	}
 }
+/* To make this command work, make 2 text files, scrambledwords.txt and unscrambledwords.txt in home/container/ 
+Now type 1 scrambled words on each line do same with unscrambeled words.
+Now compile the command using "/Compile scramble"
+Load the command using "/CmdLoad scramble"
+Now its ready to use! 
+If any error occurs or for any queries, contact _ninjazzhere_ on discord. 
+*/ 
