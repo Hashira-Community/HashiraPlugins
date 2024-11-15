@@ -23,10 +23,10 @@ namespace MCGalaxy
         
         void KickClient(Player p) {
         // Put playername between "".
-		if (p.truename == ""){
-        	p.Leave("Get outta here you stinky poo!", true);
-			p.cancelconnecting = true;
-        	}
+	        if (p.truename == ""){
+                p.Leave("Get outta here you stinky poo!", true);
+		p.cancelconnecting = true;
+	    }
     	}
     }
 }
