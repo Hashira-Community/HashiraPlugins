@@ -1,6 +1,5 @@
-//Speacial thanks to Goodly.
+//Made by Ninjazz with help of Goodly
 //Inspired by New Blood's /feeling :p 
-//By Ninjazz
 
 using System;
 using MCGalaxy;
@@ -65,23 +64,23 @@ namespace Hashira {
         //Defining the abstract FeelingMessage method from the FeelingCmdTemplate class here.
         public override string FeelingMessage(Player p) {
             //This method gives a string, so we "return" the string we want the message to be.
-            return p.color + p.truename + " is hungry!";
+            return p.color + p.truename + "%7 is hungry!";
         }
 
         //Help wasn't defined in the FeelingCmdTemplate, so we still have to have it here.
         public override void Help(Player p) {
-            p.Message("/Hungry - Use if you are hungry.");
+            p.Message("%a/Hungry - %7Use if you are hungry.");
         }
     }
     public class CmdFart : FeelingCmdTemplate {
         public override string name { get { return "Fart"; } }
 
         public override string FeelingMessage(Player p) {
-            return p.color + p.truename + " farted...";
+            return p.color + p.truename + "%7 farted...";
         }
 
         public override void Help(Player p) {
-            p.Message("/Fart - Feels like farting?");
+            p.Message("%a/Fart - %7Feels like farting?");
         }
     }
 
@@ -89,11 +88,11 @@ namespace Hashira {
         public override string name { get { return "Confused"; } }
 
         public override string FeelingMessage(Player p) {
-            return p.color + p.truename + " is confused...";
+            return p.color + p.truename + "%7 is confused...";
         }
 
         public override void Help(Player p) {
-            p.Message("%7/Confused - Confused? Use this command to express your confusion!");
+            p.Message("%a/Confused - %7Confused? Use this command to express your confusion!");
         }
     }
 
@@ -101,10 +100,10 @@ namespace Hashira {
         public override string name { get { return "Sleepy"; } }
 
         public override string FeelingMessage(Player p) {
-            return p.color + p.truename + " is feeling sleepy...";
+            return p.color + p.truename + "%7 is feeling sleepy...";
         }
         public override void Help(Player p) {
-            p.Message("%7/Sleepy - Feeling Sleepy? Use this command to express your sleepyness!");
+            p.Message("%a/Sleepy - %7Feeling Sleepy? Use this command to express your sleepyness!");
         }
     }
 
@@ -112,7 +111,7 @@ namespace Hashira {
         public override string name { get { return "Bored"; } }
 
         public override string FeelingMessage(Player p) {
-            return p.color + p.truename + " is bored...";
+            return p.color + p.truename + "%7 is bored...";
         }
 
         //Since Bored has some unique behavior, we can bring back the Use method to add some custom code.
@@ -121,10 +120,10 @@ namespace Hashira {
             base.Use(p, message);
             //Now, we can execute our custom code.
             Thread.Sleep(3000);
-            p.Leave(p.color + p.name + "&S WAS BORED !?!?!?! THE HELL ?!!?! ");
+            p.Leave(p.color + p.name + "&c WAS BORED !?!?!?! THE HELL ?!!?! ");
         }
         public override void Help(Player p) {
-            p.Message("%7/Bored - Feeling Bored? Use this command to express that you are bored!");
+            p.Message("%a/Bored -%7 Feeling Bored? Use this command to express that you are bored!");
             p.Message("%7How can someone be bored on this server!?!");
         }
     }
@@ -132,10 +131,10 @@ namespace Hashira {
              public override string name { get { return "Meditate"; } } 
              
           public override string FeelingMessage(Player p) {
-            return p.ColoredName + " is trying to meditate.";
+            return p.ColoredName + "%7 is trying to meditate.";
         }
         public override void Help(Player p) {
-            p.Message("%7/Meditate - Use this command to express people that you want to meditate.");
+            p.Message("%a/Meditate - %7Use this command to express people that you want to meditate.");
         }
     }
      public class CmdScared : FeelingCmdTemplate {
@@ -147,12 +146,12 @@ namespace Hashira {
         //Defining the abstract FeelingMessage method from the FeelingCmdTemplate class here.
         public override string FeelingMessage(Player p) {
             //This method gives a string, so we "return" the string we want the message to be.
-            return p.color + p.truename + " is Scared 0.0!";
+            return p.color + p.truename + "%7 is Scared 0.0!";
         }
 
         //Help wasn't defined in the FeelingCmdTemplate, so we still have to have it here.
         public override void Help(Player p) {
-            p.Message("/Scared - Who are you scared of  0.0 ?.");
+            p.Message("%a/Scared - %7Who are you scared of  0.0 ?.");
         }
     }
      public class CmdShiver : FeelingCmdTemplate {
@@ -164,12 +163,12 @@ namespace Hashira {
         //Defining the abstract FeelingMessage method from the FeelingCmdTemplate class here.
         public override string FeelingMessage(Player p) {
             //This method gives a string, so we "return" the string we want the message to be.
-            return p.color + p.truename + " is shivering!";
+            return p.color + p.truename + "%7 is shivering!";
         }
 
         //Help wasn't defined in the FeelingCmdTemplate, so we still have to have it here.
         public override void Help(Player p) {
-            p.Message("/Shiver - Use if you are shivering");
+            p.Message("%a/Shiver - %7Use if you are shivering");
         }
     }
 }
