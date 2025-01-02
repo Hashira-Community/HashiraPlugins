@@ -1,5 +1,6 @@
-//Made by Ninjazz with help of Goodly
+//Speacial thanks to Goodly.
 //Inspired by New Blood's /feeling :p 
+//By Ninjazz
 
 using System;
 using MCGalaxy;
